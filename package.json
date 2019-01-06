@@ -1,0 +1,36 @@
+{
+  "name": "reactboilerplate",
+  "version": "0.0.1",
+  "description": "My Bolier Plate for react project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishal73139/my_react_boilerplate_with_webpack.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Vishal Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishal73139/my_react_boilerplate_with_webpack/issues"
+  },
+  "homepage": "https://github.com/vishal73139/my_react_boilerplate_with_webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
