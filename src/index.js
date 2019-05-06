@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; 
+import { Provider } from 'react-redux';
 
-const title = 'VISHAL SHARMA:- REACT WITH WEBPACK AND BABEL';
+import Navigation from './components/navigation';
+import Store from './store';
 
-ReactDOM.render(
-  <div>{title}</div>,
+import './assets/scss/style.scss';
+ 
+
+ReactDOM.render(<Provider store={Store}>
+     <Navigation />
+   </Provider>,
   document.getElementById('app')
 );
