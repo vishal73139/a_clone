@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "convertData": "npm i -g csvtojson && csvtojson csv/sachin.csv > json/data.json",
+    "dataStart": "json-server --watch json/data.json",
+    "dev": "concurrently --kill-others \"npm run dataStart\" \"npm run start\""
   },
   "repository": {
     "type": "git",
@@ -36,13 +39,19 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "csvtojson": "^2.0.8",
+    "fusioncharts": "^3.13.4",
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
+    "json-server": "^0.14.2",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "owl.carousel": "^2.3.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-fusioncharts": "^3.0.0",
     "react-masonry-component": "^6.2.1",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
